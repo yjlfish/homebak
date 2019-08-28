@@ -1,0 +1,70 @@
+<link rel="stylesheet" href="{{ '/artModal-master/demo/demo.css' | relative_url }}"> 
+<link rel="stylesheet" href="{{ '/artModal-master/src/artModal.css' | relative_url }}">
+<script src="{{ '/artModal-master/src/artModal.js' | relative_url }}"></script>
+<link rel="stylesheet" type="text/css" href="{{ '/verify-master/css/verify.css' | relative_url }}">
+<script type="text/javascript" src="{{ '/verify-master/js/jquery.min.js' | relative_url }}" ></script>
+<script type="text/javascript" src="{{ '/verify-master/js/verify.js' | relative_url }}" ></script>
+<script type="text/javascript" src="{{ '/verify-master/js/md5.min.js' | relative_url }}" ></script>
+
+<div class="artModal fade" id="secretdialog" >
+    <div class="artModal-dialog" >
+        <div class="artModal-content" >
+            <div class="custom_style" >
+                请输入访问密码和运算验证码
+                 <div>
+                <input id="yqcode" placeholder="请输入访问密码"/>
+                </div>
+                <div id="vericode" style="margin-top: 20px">
+                </div>
+                <span id="errtip" style="color:red"></span>
+                <button type="button" id="check-btn2" class="verify-btn">确定</button>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>  
+    var accesscode=['{{ site.accesscode | join: "','" }}'];
+    var myModal_1_obj = artModal({  //构建artModal实例
+            element: document.getElementById('secretdialog'),
+            open: function () {
+            $('#vericode').codeVerify({
+                  type : 2,
+                  figure : 100, //位数，仅在type=2时生效
+                  arith : 0,  //算法，支持加减乘，不填为随机，仅在type=2时生效
+                  width : '300px',
+                  height : '50px',
+                  fontSize : '30px',
+                  btnId : 'check-btn2',
+                  ready : function() {
+                  },
+                  success : function() {
+                    var yqcodeValue=$("#yqcode").val();
+                    if(yqcodeValue == null || yqcodeValue == "" || yqcodeValue == "undefined" || yqcodeValue == undefined || yqcodeValue == "null"){
+                        $("#errtip").html("访问密码不能为空");
+                    }else if(accesscode.indexOf(md5(yqcodeValue))<0){
+                        $("#errtip").html("访问密码不正确");
+                    }else{
+                        myModal_1_obj.close();  //关闭
+                    }
+                  },
+                  error : function() {
+                     var yqcodeValue=$("#yqcode").val();
+                    if(yqcodeValue == null || yqcodeValue == "" || yqcodeValue == "undefined" || yqcodeValue == undefined || yqcodeValue == "null"){
+                      $("#errtip").html("访问密码不能为空");
+
+                    }else if(accesscode.indexOf(md5(yqcodeValue))<0){
+                        $("#errtip").html("访问密码不正确");
+                    }else{ 
+                      $("#errtip").html("验证码不匹配");
+                    }
+                   
+                  }
+                });
+            },
+            position: 'top'
+        });
+        myModal_1_obj.open();  //显示
+    
+</script>

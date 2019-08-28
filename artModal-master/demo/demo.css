@@ -1,0 +1,12 @@
+
+button,input,select,textarea,table{font:16px/1.8 verdana,tahoma,Arial,\5FAE\8F6F\96C5\9ED1,\5B8B\4F53;}
+
+
+
+.custom_style{padding:10px;border-radius:8px;margin:0 auto;background:#fff;color:#000;border:1px solid #d1d6db;
+    -webkit-box-shadow:0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow:0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.custom_style button{display:inline-block;margin:0 4px;background:#09080c;color:#fff;border:0;padding:0 8px;border-radius:4px;cursor:pointer;vertical-align:middle;}
+.custom_style .content{height:300px;line-height:300px;text-align:center;background:#ccc;margin:10px 0;}
+

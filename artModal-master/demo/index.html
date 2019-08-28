@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>artModal demo</title>
+    <link rel="stylesheet" href="./demo.css">
+   
+
+    <link rel="stylesheet" href="../src/artModal.css">
+    <script src="../src/artModal.js"></script>
+</head>
+<body>
+    
+       
+        
+            <button id="btn">我只是一个普通的button</button>
+
+            <script>
+                var timer;
+                var btn = document.getElementById('btn');
+                btn.onclick = function () {
+                    var myModal_1_obj = artModal({  //构建artModal实例
+                        element: document.getElementById('myModal_1'),
+                       
+                        position: 'middle'
+                    });
+                    myModal_1_obj.open();  //显示
+                }
+            </script>
+            
+    
+    
+
+    <div class="artModal fade" id="myModal_1" >
+        <div class="artModal-dialog">
+            <div class="artModal-content">
+                <div class="custom_style">
+                    基础演示1<button data-dismiss="artModal">关闭1</button>
+                    <input name="sdsds" value="sdsds"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
