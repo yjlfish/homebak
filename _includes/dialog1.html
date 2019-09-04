@@ -6,6 +6,8 @@
 <script type="text/javascript" src="{{ '/verify-master/js/verify.js' | relative_url }}" ></script>
 <script type="text/javascript" src="{{ '/verify-master/js/md5.min.js' | relative_url }}" ></script>
 
+{% include showcontent.html %}
+
 <div class="artModal fade" id="secretdialog" >
     <div class="artModal-dialog" >
         <div class="artModal-content" >
@@ -54,6 +56,7 @@ var accesscode=['{{ site.accesscode | join: "','" }}'];
                     }else if(accesscode.indexOf(md5(yqcodeValue))<0){
                         $("#errtip").html("访问密码不正确");
                     }else{
+                        $("#bindcontent").after(getDAes(cont));
                         myModal_1_obj.close();  //关闭
                     }
             },
@@ -77,3 +80,4 @@ var accesscode=['{{ site.accesscode | join: "','" }}'];
         myModal_1_obj.open();  //显示
     
 </script>
+<div id="bindcontent"></div>

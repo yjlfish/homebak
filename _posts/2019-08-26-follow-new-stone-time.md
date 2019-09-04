@@ -8,7 +8,6 @@ header:
   actions:
     - label: "bilibili观看"
       url: "https://www.bilibili.com/bangumi/play/ss27993"
-
 categories:
   - 新番
 tags:
@@ -25,7 +24,7 @@ videos:
 toc: true
 toc_label: 视频列表
 toc_sticky: true
-secretpage: false
+secretpage: true
 scrollgrace: true
 ---
 

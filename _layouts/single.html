@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default4single
 ---
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
   {% include page__hero.html %}
@@ -41,7 +41,11 @@ layout: default
             </nav>
           </aside>
         {% endif %}
-        {{ content }}
+        {%if page.secretpage==true%}
+          {% include dialog1.html %}
+        {%else%}
+          {{ content }}
+        {%endif%}
         {% include comments1.html %}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>

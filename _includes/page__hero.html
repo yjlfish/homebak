@@ -52,7 +52,7 @@
         <p><a href="{{ cta_path }}" class="btn btn--light-outline btn--large">{{ page.header.cta_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
       {% endif %}
       {% if page.header.actions %}
-        <p>
+
         {% for action in page.header.actions %}
           {% if action.url contains "://" %}
             {% assign url = action.url %}
