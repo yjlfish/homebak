@@ -46,7 +46,9 @@ layout: default4single
         {%else%}
           {{ content }}
         {%endif%}
-        {% include comments1.html %}
+        {%unless page.permalink=="/404.html"%}
+          {% include comments1.html %}
+        {% endunless %}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
