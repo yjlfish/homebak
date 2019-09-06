@@ -38,7 +38,7 @@ name                     : "于健龙"
 description              :  "Minimal Mistakes theme test."
 logo: "/assets/images/timg.png"
 url                      : "https://yjlfish.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/homebak"
+baseurl                  : "/home"
 repository: "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title

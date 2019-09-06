@@ -1,7 +1,7 @@
 
 <script type="text/javascript" src="{{ '/verify-master/js/crypto-js.js' | relative_url }}" ></script>
 <script>
-    function getAesString(data,key,iv){
+    function getAesString(data,key,iv){//加密
         var key  = CryptoJS.enc.Utf8.parse(key);
         var iv   = CryptoJS.enc.Utf8.parse(iv);
         var encrypted =CryptoJS.AES.encrypt(data,key,
@@ -10,9 +10,9 @@
                 mode:CryptoJS.mode.CBC,
                 padding:CryptoJS.pad.Pkcs7
             });
-        return encrypted.toString();
+        return encrypted.toString();    //返回的是base64格式的密文
     }
-    function getDAesString(encrypted,key,iv){
+    function getDAesString(encrypted,key,iv){//解密
         var key  = CryptoJS.enc.Utf8.parse(key);
         var iv   = CryptoJS.enc.Utf8.parse(iv);
         var decrypted =CryptoJS.AES.decrypt(encrypted,key,
@@ -24,22 +24,32 @@
         return decrypted.toString(CryptoJS.enc.Utf8);
     }
 
-    function getAES(data){
-        var key  = 'abcdabcdabcdabcdabcdabcdabcdabcd';
+    function getAES(data){ //加密
+        var key  = 'abcdabcdabcdabcdabcdabcdabcdabcd';  //密钥
         var iv   = 'ABCDEF1234123412';
-        var encrypted =getAesString(data,key,iv);
+        var encrypted =getAesString(data,key,iv); //密文
         var encrypted1 =CryptoJS.enc.Utf8.parse(encrypted);
         return encrypted;
     }
 
-    function getDAes(data){
-        var key  = 'abcdabcdabcdabcdabcdabcdabcdabcd';
+    function getDAes(data){//解密
+        var key  = 'abcdabcdabcdabcdabcdabcdabcdabcd';  //密钥
         var iv   = 'ABCDEF1234123412';
         var decryptedStr =getDAesString(data,key,iv);
         return decryptedStr;
     }
 
+
+    //alert(CryptoJS.AES.encrypt('ssss', 'abc').toString());
+    //alert(CryptoJS.AES.decrypt('U2FsdGVkX1+zPCX/urJniJUslVSp/iBbgbYkuV4UYLg=', 'secret key 123').toString(CryptoJS.enc.Utf8));
+    //alert(getAES('ssss'));
+    //alert(getDAes('5Nwv630TpkuD5H71qAgJLA=='));
+
     var cont="{{content| markdownify|aesencode}}";
+
+    // if(showflag==true){
+    //      $("#bindcontent").after(getDAes(cont));
+    // }
 
 
 </script>
