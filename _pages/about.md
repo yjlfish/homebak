@@ -75,22 +75,22 @@ secretpage: true
      <h1>于健龙</h1>
      <div>
          <span>
-             <img src="/assetsresume/phone-solid.svg" width="18px">
+             <img src="{{site.baseurl}}/assetsresume/phone-solid.svg" width="18px">
              18710082816
          </span>
          ·
          <span>
-             <img src="/assetsresume/envelope-solid.svg" width="18px">
+             <img src="{{site.baseurl}}/assetsresume/envelope-solid.svg" width="18px">
              yjl_yujianlong@126.com
          </span>
          ·
          <span>
-             <img src="/assetsresume/github-brands.svg" width="18px">
+             <img src="{{site.baseurl}}/assetsresume/github-brands.svg" width="18px">
              <a href="https://github.com/yjlfish">yjlfish</a>
          </span>
          ·
          <span>
-             <img src="/assetsresume/rss-solid.svg" width="18px">
+             <img src="{{site.baseurl}}/assetsresume/rss-solid.svg" width="18px">
              <a href="https://yujianlong.top">博客</a>
          </span>
      </div>
@@ -234,7 +234,7 @@ pc 端是给不能用手机的一线联通工作者使用的，他们只能用�
 独立组合 gitalk评论系统 站内搜索 加密内容 统计 验证码 锚点优化 多种resume模板
 搭建cydia源YJLFISH
 
-## <img src="/assetsresume/tools-solid.svg" width="30px"> 技能清单
+## <img src="{{site.baseurl}}/assetsresume/tools-solid.svg" width="30px"> 技能清单
 
 - ★★★ Java
 - ★★★ MySQL
