@@ -11,7 +11,7 @@ tags:
 toc: true
 toc_label: 目录
 toc_sticky: true
-secretpage: false
+secretpage: true
 scrollgrace: true
 last_modified_at: 2019-08-26T15:12:19-04:00
 ---
@@ -32,7 +32,7 @@ https://github.com/supermamon/repo/tree/gh-pages
 首先下载下来 或者fork模板  
 更名成自己的仓库名 https://username.github.io/cydia 以便开启github pages  
 编辑Release文件 类似下边这样  
-```
+```yaml
 Origin: YJLFISH
 Label: YJLFISH
 Suite: stable
@@ -46,7 +46,7 @@ Description: YJLFISH's public repo.
 
 几个xml的生成主要是 
 ```xml
-info.xml.
+info.xml
 
 <package>
     <id>com.supermamon.oldpackage</id>
@@ -98,7 +98,8 @@ getPV 主要生成各个包目录和目录下的 changelog.xml 和info.xml文件
 生成钱删除所有看似包的目录  
 可以着重看我的仓库  
 4. 本地化一些文字
-```java
+
+{% highlight java linenos %}
 package cn.stylefeng.guns.config;
 
 import cn.hutool.core.io.FileUtil;
@@ -228,7 +229,7 @@ public class ReadPack {
 	}
 }
 
-```
+{% endhighlight %}
 
 ## deb导出或者三方获取deb
 cydia点击变更 右上角的文件夹  管理 或者wifi-sharing 或者dropbox 推荐wifi 点开启，mac上连接提示的网址  

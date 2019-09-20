@@ -26,15 +26,7 @@
 
 <body>
 <div id="app">
-    <!-- Preloader -->
-    <div id="preloader">
-        <div id="loader">
-            <img src="img/cube.gif" alt="preload spinner">
-            <div class="pre-logo">
-                <h4>Cross.</h4>
-            </div>
-        </div>
-    </div>
+
     <!-- End of preloader -->
 
     <!-- Start wrapper as cross-portfolio -->
@@ -52,11 +44,9 @@
         <!-- Overlay menu -->
         <nav id="menu-overlay">
             <ul id="menu" class="menu-click list-unstyled">
-                <li><a data-scroll href="#profile" class="smooth-scroll">TOP</a></li>
-                <li><a data-scroll href="#services" class="smooth-scroll">SERVICES</a></li>
-                <li><a data-scroll href="#portfolio" class="smooth-scroll">WORK</a></li>
-                <li><a data-scroll href="#resume" class="smooth-scroll">RESUME</a></li>
-                <li><a data-scroll href="#contact" class="smooth-scroll">CONTACT</a></li>
+                <li><a data-scroll href="#profile" class="smooth-scroll">简介</a></li>
+                <li><a data-scroll href="#resume" class="smooth-scroll">简历</a></li>
+                <li><a  href="/home/" >回到首页</a></li>
             </ul>
         </nav>
         <!-- end of overlay menu -->
@@ -67,15 +57,17 @@
             <!-- Background -->
             <div class="bg">
                 <div class="bg-img">
-                    <img :src="background_image" alt="Background Image"/>
+                    <img :src="background_image" alt=""/>
                 </div>
             </div>
             <!-- End of background -->
 
             <!-- Top logo -->
             <div class="cross-top">
-                <a href="index.html" class="logo"><span>Cross.</span></a>
+                <a href="/home/tags/" class="logo"><span>博客</span></a>
             </div>
+
+
             <!-- End of top logo -->
 
             <!-- The middle big title -->
@@ -117,14 +109,14 @@
 
                     <!-- Avatar image -->
                     <div class="col-lg-6 col-md-12 col-sm-12 hidden-md animated">
-                        <img :src="avatar" alt="Avatar" width="100%">
+                        <img :src="avatar" alt="Avatar" width="40%">
                     </div>
                     <!-- End avatar image -->
 
                     <!-- Start skills / expertise -->
                     <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="space">
-                            <h3>技 多 不 压 身</h3>
+                            <h3>SKILLS</h3>
 
                             <h5>{{skill1}}</h5>
                             <div class="progress progress-striped active">
@@ -186,12 +178,6 @@
                                     <span :data-to="project_num" class="count" data-from="0"
                                           data-speed="5000" data-refresh-interval="50"></span></p>
                                 <h5 class="text-weight">项目经验</h5>
-                            </div>
-                            <div class="col-md-4">
-                                <p class="h2"><i class="fa fa-code"></i>
-                                    <span :data-to="code_line_num" class="count" data-from="0"
-                                          data-speed="5000" data-refresh-interval="50"></span></p>
-                                <h5 class="text-weight">总代价量</h5>
                             </div>
                         </div>
                         <!-- End countTo -->
@@ -405,27 +391,6 @@
                         <hr class="visible-xs">
                     </div>
 
-                    <!-- education 2 -->
-                    <div class="col-sm-8 col-md-8 col-md-push-4 animated">
-                        <h4>{{major2}}</h4>
-                        <p>{{major_dtl2}}</p>
-                        <hr class="hidden-xs">
-                    </div>
-
-                    <div class="col-sm-4 col-md-4 col-md-pull-8 animated">
-                        <div class="icon-list">
-                            <div class="icon-list-icon">
-                                <i class="fa fa-graduation-cap"></i>
-                            </div>
-                            <div class="icon-list-content">
-                                <div class="icon-list-title">{{school2}}</div>
-                                <div class="icon-list-info">
-                                    <span>{{years2}}</span>
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="visible-xs">
-                    </div>
 
                 </div>
                 <!-- .row -->
@@ -479,15 +444,54 @@
                         <hr class="visible-xs">
                     </div>
 
+                    <!-- experience 3 -->
+                    <div class="col-sm-8 col-md-8 col-md-push-4 animated">
+                        <h4>{{job3}}</h4>
+                        <p>{{jobp3}}</p>
+                        <hr class="hidden-xs">
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-md-pull-8 animated">
+                        <div class="icon-list">
+                            <div class="icon-list-icon">
+                                <i class="fa fa-briefcase"></i>
+                            </div>
+                            <div class="icon-list-content">
+                                <div class="icon-list-title">{{cpn3}}</div>
+                                <div class="icon-list-info">
+                                    <span>{{cpnyear3}}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="visible-xs">
+                    </div>
+
+                    <!-- experience 4 -->
+                    <div class="col-sm-8 col-md-8 col-md-push-4 animated">
+                        <h4>{{job4}}</h4>
+                        <p>{{jobp4}}</p>
+                        <hr class="hidden-xs">
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-md-pull-8 animated">
+                        <div class="icon-list">
+                            <div class="icon-list-icon">
+                                <i class="fa fa-briefcase"></i>
+                            </div>
+                            <div class="icon-list-content">
+                                <div class="icon-list-title">{{cpn4}}</div>
+                                <div class="icon-list-info">
+                                    <span>{{cpnyear4}}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="visible-xs">
+                    </div>
+
                 </div>
                 <!-- .row -->
 
                 <!-- download cv button -->
-                <div class="row">
-                    <div class="col-md-12 animated text-center">
-                        <a href="javascript:alert('这是一个假按钮');" class="btn btn-default btn-lg"><i class="fa fa-cloud-download"></i> Download CV</a>
-                    </div>
-                </div>
                 <!-- row -->
             </div>
             <!-- containers -->
@@ -608,14 +612,13 @@
                     <div class="col-md-12 text-center">
                         <a href="index.html" class="footer-logo"><span>Cross.</span></a>
                         <ul class="social">
-                            <li class="hvr-grow"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li class="hvr-grow"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li class="hvr-grow"><a href="#"><i class="fa fa-github"></i></a></li>
-                            <li class="hvr-grow"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li class="hvr-grow"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            <li class="hvr-grow"><a href="mailto:yjl_yujianlong@126.com"><i class="fa fa-envelope-o"></i></a></li>
+                            <li class="hvr-grow"><a href="https://www.facebook.com/yjl.yujianlong"><i class="fa fa-facebook"></i></a></li>
+                            <li class="hvr-grow"><a href="https://twitter.com/yujianlongyjl"><i class="fa fa-twitter"></i></a></li>
+                            <li class="hvr-grow"><a href="https://github.com/yjlfish"><i class="fa fa-github"></i></a></li>
+                            <li class="hvr-grow"><a href="https://www.linkedin.com/in/ocarinahome"><i class="fa fa-linkedin"></i></a></li>
                         </ul>
-                        <p>Copyright &copy; 2017.Company name All rights reserved.More Templates
-                        </p>
+
                     </div>
 
                 </div>

@@ -1,58 +1,60 @@
 ---
-title: "首页"
+title: "  "
 layout: splash
 permalink: /splash-page/
 date: 2016-03-23T11:48:41-04:00
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/unsplash-image-1.jpg
+  overlay_image: https://txyimg-1300036828.cos.ap-beijing.myqcloud.com/gallery/homepage.jpg
   actions:
-    - label: "Download"
-      url: "https://github.com/mmistakes/minimal-mistakes/"
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-excerpt: "Bacon ipsum dolor sit amet salami ham hock ham, hamburger corned beef short ribs kielbasa biltong t-bone drumstick tri-tip tail sirloin pork chop."
+    - label: "原点"
+      url: "/"
+  caption: "welcome 2 yjlhome"
+excerpt: "起心动念悟后起修"
 intro: 
-  - excerpt: 'Nullam suscipit et nam, tellus velit pellentesque at malesuada, enim eaque. Quis nulla, netus tempor in diam gravida tincidunt, *proin faucibus* voluptate felis id sollicitudin. Centered with `type="center"`'
+  - excerpt: '有才而性缓,定属大才。有智而气和,斯为大智'
 feature_row:
-  - image_path: assets/images/unsplash-gallery-image-1-th.jpg
-    alt: "placeholder image 1"
-    title: "Placeholder 1"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
-    image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
-    alt: "placeholder image 2"
-    title: "Placeholder 2"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    url: "#test-link"
-    btn_label: "Read More"
+  - image_path: https://txyimg-1300036828.cos.ap-beijing.myqcloud.com/gallery/IMG_9571.JPG
+    image_caption: "风吹草低见牛羊"
+    alt: ""
+    title: "五蕴"
+    excerpt: "**末法时代**体会人间百味"
+  - image_path:  https://txyimg-1300036828.cos.ap-beijing.myqcloud.com/gallery/IMG_6951.jpg
+    image_caption: "随心去旅行"
+    alt: " "
+    title: "六根"
+    excerpt: "勇猛能精进，摄心常在禅。"
+    url: "/resume4/"
+    btn_label: "简介"
     btn_class: "btn--primary"
-  - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
-    title: "Placeholder 3"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+  - image_path: https://txyimg-1300036828.cos.ap-beijing.myqcloud.com/gallery/IMG_4160.JPG
+    image_caption: "云深不知处"
+    title: "六尘"
+    excerpt: "一重山了一重云，行尽天涯转苦辛。"
 feature_row2:
-  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
-    alt: "placeholder image 2"
-    title: "Placeholder Image Left Aligned"
-    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Left aligned with `type="left"`'
-    url: "#test-link"
-    btn_label: "Read More"
+  - image_path: https://txyimg-1300036828.cos.ap-beijing.myqcloud.com/gallery/IMG_6951.jpg
+    alt: " "
+    title: "文字即波若"
+    excerpt: '若有想、若无想、若非有想非无想'
+    url: "/categories/"
+    btn_label: "文章"
     btn_class: "btn--primary"
 feature_row3:
-  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
-    alt: "placeholder image 2"
-    title: "Placeholder Image Right Aligned"
-    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Right aligned with `type="right"`'
-    url: "#test-link"
-    btn_label: "Read More"
+  - image_path: https://txyimg-1300036828.cos.ap-beijing.myqcloud.com/gallery/IMG_4160.JPG
+    alt: " "
+    title: "烦恼即菩提"
+    excerpt: '有我相、人相、众生相、寿者相'
+    url: "/tags/"
+    btn_label: "标签"
     btn_class: "btn--primary"
 feature_row4:
-  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
-    alt: "placeholder image 2"
-    title: "Placeholder Image Center Aligned"
-    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Centered with `type="center"`'
-    url: "#test-link"
-    btn_label: "Read More"
+  - image_path: https://txyimg-1300036828.cos.ap-beijing.myqcloud.com/gallery/IMG_9571.JPG
+    alt: " "
+    title: "越来越巧"
+    excerpt: ' '
+    url: "https://yujianlong.top/myrepo/"
+    btn_label: "越狱源"
     btn_class: "btn--primary"
 ---
 

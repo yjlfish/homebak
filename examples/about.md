@@ -60,11 +60,14 @@ secretpage: true
 
 更多文章请看 [文章][year-archive].
 
-[新石纪]: {{ "" | relative_url }}{% post_url 2019-08-26-follow-new-stone-time %}
-
-[分类文章]: {{ "/categories/" | relative_url }}
-[标签文章]: {{ "/tags/" | relative_url }}
-[年度分类]: {{ "/year-archive/" | relative_url }}
+[header-image-post]: {{ "" | relative_url }}{% post_url 2012-04-15-layout-header-image-text-readability %}
+[gallery-post]: {{ "" | relative_url }}{% post_url 2010-09-09-post-gallery %}
+[html-tags-post]: {{ "" | relative_url }}{% post_url 2013-01-11-markup-html-tags-and-formatting %}
+[syntax-post]: {{ "" | relative_url }}{% post_url 2013-08-16-markup-syntax-highlighting %}
+[sample-collection]: {{ "/recipes/chocolate-chip-cookies/" | relative_url }}
+[categories-archive]: {{ "/categories/" | relative_url }}
+[tags-archive]: {{ "/tags/" | relative_url }}
+[year-archive]: {{ "/year-archive/" | relative_url }}
 
 ---
 

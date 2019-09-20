@@ -17,6 +17,9 @@ main:
     url: /resume1/
   - title: "简历2"
     url: /resume2/
+  - title: "简历3"
+    url: /resume4/
+
   - title: "越狱源"
     url: https://yujianlong.top/myrepo
  

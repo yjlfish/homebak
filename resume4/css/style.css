@@ -624,7 +624,7 @@ button.trigger::before {
   padding: 0.8em;
   width: 300%;
   color: #fff;
-  content: 'View Profile';
+  content: '查看简介';
   font-size: 0.35em;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
